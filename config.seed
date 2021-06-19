@@ -8,8 +8,6 @@ CONFIG_KERNEL_BUILD_USER="Ango"
 
 CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_vsftpd-tls=y
-CONFIG_PACKAGE_luci-app-vsftpd=y
 CONFIG_PACKAGE_vlmcsd=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 
