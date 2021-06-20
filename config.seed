@@ -7,7 +7,6 @@ CONFIG_KERNEL_BUILD_DOMAIN="Actions"
 CONFIG_KERNEL_BUILD_USER="Ango"
 
 CONFIG_PACKAGE_luci-app-ddns=y
-CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-nlbwmon=y
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
