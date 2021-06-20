@@ -2,13 +2,12 @@
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
 CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=y
-CONFIG_TARGET_ROOTFS_PARTSIZE=4096
+CONFIG_TARGET_ROOTFS_PARTSIZE=1024
 CONFIG_KERNEL_BUILD_DOMAIN="Actions"
 CONFIG_KERNEL_BUILD_USER="Ango"
 
 CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_luci-app-lxc=y
 
 # ============ Base Package ============
 CONFIG_PACKAGE_cgi-io=y
