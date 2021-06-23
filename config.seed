@@ -7,12 +7,17 @@ CONFIG_KERNEL_BUILD_DOMAIN="Actions"
 CONFIG_KERNEL_BUILD_USER="Ango"
 
 CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_drill=y
+
+CONFIG_PACKAGE_luci-app-https-dns-proxy=y
+# CONFIG_PACKAGE_dnsmasq is not set
+CONFIG_PACKAGE_dnsmasq-full=y
+
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-wol=y
-
-CONFIG_PACKAGE_luci-app-passwall=y
 
 # ============ Base Package ============
 CONFIG_PACKAGE_cgi-io=y
