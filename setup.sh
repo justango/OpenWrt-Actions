@@ -4,7 +4,8 @@
 # Clone OpenWrt
 OP_REPO_URL=https://github.com/openwrt/openwrt
 OP_REPO_BRANCH=master
-git clone $OP_REPO_URL -b $OP_REPO_BRANCH $GITHUB_WORKSPACE/openwrt
+cd $GITHUB_WORKSPACE/openwrt
+git clone $OP_REPO_URL -b $OP_REPO_BRANCH
 
 # Clone Package
 cd $GITHUB_WORKSPACE/openwrt/package
