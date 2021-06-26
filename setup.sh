@@ -1,22 +1,21 @@
 #!/bin/bash
 # Copyright (C) 2021 Ango <m@ango.me>
-# XPATH=$PWD/openwrt
 
 # Clone OpenWrt
 OP_REPO_URL=https://github.com/openwrt/openwrt
 OP_REPO_BRANCH=master
-git clone $OP_REPO_URL -b $OP_REPO_BRANCH $XPATH
+git clone $OP_REPO_URL -b $OP_REPO_BRANCH $GITHUB_WORKSPACE/openwrt
 
 # Clone Package
-cd $XPATH/package
+cd $GITHUB_WORKSPACE/openwrt/package
 # git clone https://git.example.com
 
 # Update & Install feeds
-cd $XPATH/scripts
+cd $GITHUB_WORKSPACE/openwrt/scripts
 ./feeds update -a && ./feeds install -a
 
 # Generate Config
-cd $XPATH
+cd $GITHUB_WORKSPACE/openwrt
 rm -f ./.config* && touch ./.config
 cat >> ./.config <<EOF
 # ======== Custom Config ========
