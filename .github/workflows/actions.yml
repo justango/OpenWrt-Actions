@@ -42,12 +42,11 @@ jobs:
       - name: Compilation
         env:
           SETUP_FILE: setup.sh
-          XPATH: $PWD/openwrt
         run: |
           # Configuration
           sed -i "s/\r//" $SETUP_FILE
           chmod +x $SETUP_FILE && ./$SETUP_FILE
-          cd $XPATH
+          cd $GITHUB_WORKSPACE/openwrt
           # Make config & download
           make defconfig && make download -j8
           rm -rf $(find dl -size -1024c)
