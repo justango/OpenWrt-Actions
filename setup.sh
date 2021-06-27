@@ -36,10 +36,6 @@ CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
 
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_dockerd=y
-CONFIG_DOCKER_OPTIONAL_FEATURES=y
-
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-wol=y
