@@ -10,8 +10,6 @@ git clone $OP_REPO_URL -b $OP_REPO_BRANCH
 # Clone Package
 cd $GITHUB_WORKSPACE/openwrt/package
 # git clone https://git.example.com
-git clone https://github.com/cokebar/openwrt-vlmcsd
-git clone https://github.com/cokebar/luci-app-vlmcsd
 
 # Update & Install feeds
 cd $GITHUB_WORKSPACE/openwrt/scripts
@@ -38,8 +36,8 @@ CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
 
-CONFIG_PACKAGE_luci-app-vlmcsd=y
-CONFIG_PACKAGE_luci-compat=y
+CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_DOCKER_OPTIONAL_FEATURES=y
 
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
