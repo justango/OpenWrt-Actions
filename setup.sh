@@ -37,7 +37,8 @@ CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 CONFIG_PACKAGE_dnsmasq-full=y
 
 CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_DOCKER_OPTIONAL_FEATURES=y
+CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_docker_ce=y
+CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_ttyd=n
 
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
