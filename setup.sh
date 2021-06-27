@@ -41,7 +41,6 @@ CONFIG_DOCKER_OPTIONAL_FEATURES=y
 
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
-CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-wol=y
 
 CONFIG_PACKAGE_cgi-io=y
