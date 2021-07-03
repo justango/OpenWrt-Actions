@@ -10,6 +10,8 @@ git clone $OP_REPO_URL -b $OP_REPO_BRANCH
 # Clone Package
 cd $GITHUB_WORKSPACE/openwrt/package
 # git clone https://git.example.com
+git clone https://github.com/kenzok8/small
+git clone https://github.com/kenzok8/openwrt-packages
 
 # Update & Install feeds
 cd $GITHUB_WORKSPACE/openwrt/scripts
@@ -39,6 +41,8 @@ CONFIG_PACKAGE_dnsmasq-full=y
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-wol=y
+
+CONFIG_PACKAGE_luci-app-passwall=y
 
 CONFIG_PACKAGE_cgi-io=y
 CONFIG_PACKAGE_libiwinfo=y
