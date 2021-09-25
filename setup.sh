@@ -3,7 +3,7 @@
 
 # Clone OpenWrt
 OP_REPO_URL=https://github.com/openwrt/openwrt
-OP_REPO_BRANCH=master
+OP_REPO_BRANCH=openwrt-21.02
 cd $GITHUB_WORKSPACE/openwrt
 git clone $OP_REPO_URL -b $OP_REPO_BRANCH
 
