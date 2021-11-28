@@ -39,6 +39,7 @@ CONFIG_PACKAGE_dnsmasq-full=y
 CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-ocserv=y
 
 CONFIG_PACKAGE_cgi-io=y
 CONFIG_PACKAGE_libiwinfo=y
