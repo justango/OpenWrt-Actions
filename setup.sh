@@ -24,20 +24,19 @@ cat >> ./.config <<EOF
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
 CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=y
-CONFIG_TARGET_ROOTFS_PARTSIZE=1024
+CONFIG_TARGET_ROOTFS_PARTSIZE=4096
 CONFIG_KERNEL_BUILD_DOMAIN="Actions"
 CONFIG_KERNEL_BUILD_USER="Ango"
 
 CONFIG_PACKAGE_luci-app-ddns=y
-CONFIG_PACKAGE_curl=y
-CONFIG_PACKAGE_drill=y
+CONFIG_PACKAGE_wget-ssl=y
+CONFIG_PACKAGE_bind-host=y
 
 CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
 
 CONFIG_PACKAGE_luci-app-sqm=y
-CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-ocserv=y
 
 CONFIG_PACKAGE_cgi-io=y
