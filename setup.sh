@@ -3,7 +3,7 @@
 
 # Clone OpenWrt
 OP_REPO_URL=https://github.com/openwrt/openwrt
-OP_REPO_BRANCH=v21.02.0
+OP_REPO_BRANCH=v21.02.1
 cd $GITHUB_WORKSPACE/openwrt
 git clone $OP_REPO_URL -b $OP_REPO_BRANCH
 
@@ -36,10 +36,9 @@ CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
 
-CONFIG_PACKAGE_luci-app-simple-adblock=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-wol=y
-CONFIG_PACKAGE_luci-app-openvpn=y
+CONFIG_PACKAGE_luci-app-ocserv=y
 
 CONFIG_PACKAGE_cgi-io=y
 CONFIG_PACKAGE_libiwinfo=y
